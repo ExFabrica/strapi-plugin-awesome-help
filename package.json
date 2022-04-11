@@ -1,6 +1,6 @@
 {
   "name": "@exfabrica/strapi-plugin-awesome-help",
-  "version": "0.9.3",
+  "version": "1.0.1",
   "description": "This plugin enable creation of contextual helps for your Strapi documents!",
   "strapi": {
     "name": "awesome-help",
@@ -8,20 +8,19 @@
     "kind": "plugin",
     "displayName": "Awesome Help"
   },
-  "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {
     "@strapi/strapi": "^4.1.7"
   },
   "author": {
     "name": "exFabrica.io",
-    "email": "xxxxx@exfabrica.io",
+    "email": "research@exfabrica.io",
     "url": "https://exfabrica.io"
   },
   "maintainers": [
     {
       "name": "exFabrica.io",
-      "email": "xxxxx@exfabrica.io",
+      "email": "research@exfabrica.io",
       "url": "https://exfabrica.io"
     }
   ],
@@ -29,5 +28,17 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ExFabrica/strapi-plugin-awesome-help.git"
+  },
+  "keywords": [
+    "Strapi",
+    "plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/ExFabrica/strapi-plugin-awesome-help/issues"
+  },
+  "homepage": "https://github.com/ExFabrica/strapi-plugin-awesome-help#readme"
 }
