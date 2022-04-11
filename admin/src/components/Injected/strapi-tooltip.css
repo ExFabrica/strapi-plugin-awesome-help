@@ -1,0 +1,34 @@
+.awesome-help-tooltip {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.awesome-help-tooltip .awesome-help-tooltipText {
+  visibility: hidden;
+  position: absolute;
+  top:-10px;
+  left:22px;
+  width: max-content;
+  max-width: 400px;
+  padding:7px;
+  text-align: left;
+  color: #fff;
+  background-color: #212134;
+  border-radius: 5px;
+  z-index: 1;
+}
+.awesome-help-tooltip:hover .awesome-help-tooltipText {
+  visibility: visible;
+}
+.awesome-help-tooltip:after {
+  content: "";
+  display:none;
+  position:absolute;
+  border:10px solid #212134;
+  transform: translateY(-20px) translateX(7px);
+  border-color: transparent #212134 transparent transparent;
+}
+.awesome-help-tooltip:hover:before, .awesome-help-tooltip:hover:after {
+  display:block;
+}
