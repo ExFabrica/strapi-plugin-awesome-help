@@ -56,7 +56,6 @@ export const StrapiUIDecorator = ({ helpItems, enable }) => {
     const labelsInnerText = labelNodeList.map(item => item.innerText);
     if (labelsInnerText && labelsInnerText.length > 0) {
       const innerTextString = labelsInnerText.join("\n");
-      console.log("refresh");
       setNodeElementsCollectionCount(innerTextString.length);
     }
   };
