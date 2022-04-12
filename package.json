@@ -1,6 +1,6 @@
 {
   "name": "@exfabrica/strapi-plugin-awesome-help",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "This plugin enable creation of contextual helps for your Strapi documents!",
   "strapi": {
     "name": "awesome-help",
@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "peerDependencies": {
-    "@strapi/strapi": "^4.1.7"
+    "@strapi/strapi": "^4.0.0"
   },
   "author": {
     "name": "exFabrica.io",
