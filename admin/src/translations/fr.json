@@ -1,7 +1,7 @@
 {
   "plugin.name": "Awesome Help",
   "plugin.homepage.title": "Awesome Help",
-  "plugin.homepage.subtitle": "par exFabrica",
+  "plugin.homepage.subtitle": "Ajouter une aide contextuelle à vos Content-Type Strapi",
   "plugin.help.runAnalysis": "Lancer l'analyse de votre structure interne Strapi",
   "plugin.help.analysisPending": "Analyse en cours...",
   "plugin.help.settings": "Settings",
@@ -28,6 +28,6 @@
   "plugin.settings.button.save.message": "Paramètres sauvegardés",
   "plugin.settings.button.save.error": "Erreur pendant le processus de sauvegarde",
   "plugin.help.zone.title": "PLUGIN AWESOME HELP",
-  "plugin.help.zone.available": "Aide contextuelle disponible :",
+  "plugin.help.zone.available": "Afficher les aides contextuelles",
   "plugin.help.zone.button.enable": "Activer l'aide contextuelle"
 }

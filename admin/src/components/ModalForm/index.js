@@ -13,8 +13,6 @@ import {
 import { Breadcrumbs, Crumb } from '@strapi/design-system/Breadcrumbs';
 import { Box } from '@strapi/design-system/Box';
 import { Button } from '@strapi/design-system/Button';
-import { Stack } from '@strapi/design-system/Stack';
-import { Typography } from '@strapi/design-system/Typography';
 import { Textarea } from '@strapi/design-system/Textarea';
 // Strapi Helper
 import {
@@ -57,39 +55,22 @@ export const ModalForm = ({ help, onToggle, onSave }) => {
         :
         <form onSubmit={handleSubmit}>
           <ModalBody>
-            <Stack size={2}>
-              <Box>
-                <Typography variant="beta" as="h2">
-                  {formatMessage({
-                    id: getTrad('plugin.help.modal.details'),
-                    defaultMessage: 'Contextual help details',
-                  })
-                  }
-                </Typography>
-                <Box paddingTop={4}>
-                  <Stack size={1}>
-                    <Textarea
-                      placeholder={formatMessage({
-                        id: getTrad('plugin.help.modal.content.placeholder'),
-                        defaultMessage: 'Contextual help details',
-                      })}
-                      label={formatMessage({
-                        id: getTrad('plugin.help.modal.content.label'),
-                        defaultMessage: 'Contextual help details',
-                      })} name="content"
-                      hint={formatMessage({
-                        id: getTrad('plugin.help.modal.content.hint'),
-                        defaultMessage: 'Contextual help details',
-                      })}
-                      value={innerHelp.helpContent}
-                      onChange={(e) => {
-                        setInnerHelp({ ...innerHelp, helpContent: e.target.value });
-                      }}>
-                    </Textarea>
-                  </Stack>
-                </Box>
-              </Box>
-            </Stack>
+            <Box>
+              <Textarea
+                placeholder={formatMessage({
+                  id: getTrad('plugin.help.modal.content.placeholder'),
+                  defaultMessage: 'Contextual help details',
+                })}
+                label={formatMessage({
+                  id: getTrad('plugin.help.modal.content.label'),
+                  defaultMessage: 'Contextual help details',
+                })} name="content"
+                value={innerHelp.helpContent}
+                onChange={(e) => {
+                  setInnerHelp({ ...innerHelp, helpContent: e.target.value });
+                }}>
+              </Textarea>
+            </Box>
           </ModalBody>
           <ModalFooter
             startActions={

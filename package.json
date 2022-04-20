@@ -1,10 +1,10 @@
 {
   "name": "@exfabrica/strapi-plugin-awesome-help",
-  "version": "1.0.6",
-  "description": "This plugin enable creation of contextual helps for your Strapi documents!",
+  "version": "1.0.7",
+  "description": "Add contextual helps for your Strapi Content-Types.",
   "strapi": {
     "name": "awesome-help",
-    "description": "This plugin enable creation of contextual helps for your Strapi documents!",
+    "description": "Add contextual helps for your Strapi Content-Types.",
     "kind": "plugin",
     "displayName": "Awesome Help"
   },

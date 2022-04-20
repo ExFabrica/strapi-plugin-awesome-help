@@ -7,7 +7,7 @@ import { Portal } from '@strapi/design-system/Portal';
 import { Typography } from '@strapi/design-system/Typography';
 import { Divider } from '@strapi/design-system/Divider';
 import { Box } from '@strapi/design-system/Box';
-import { ToggleInput } from '@strapi/design-system/ToggleInput';
+import { Switch } from '@strapi/design-system/Switch';
 // Context from Strapi Helper.
 import { useCMEditViewDataManager } from '@strapi/helper-plugin';
 //API proxy
@@ -50,19 +50,11 @@ export const StrapiListZoneItem = ({ strapi }) => {
         <Divider />
       </Box>
 
-      <Typography textColor="neutral600">
-        {`${formatMessage({ id: getTrad("plugin.help.zone.available") })} ${results.length}`}
+      <Typography variant="pi" fontWeight="bold" textColor="neutral600" >
+        {`${formatMessage({ id: getTrad("plugin.help.zone.available") })} (${results.length})`}
       </Typography>
-
-      <Box paddingBottom={4}></Box>
-
-      <ToggleInput
-        checked={enable}
-        label={formatMessage({ id: getTrad("plugin.help.zone.button.enable") })}
-        offLabel="Off"
-        onLabel="On"
-        onChange={(e) => setEnable(!enable)}
-      />
+      <Box paddingBottom={1}></Box>
+      <Switch label="Enable the Awesome Help Tooltip" selected={enable} onChange={() => setEnable(s => !s)} visibleLabels />
 
       <Portal>
         <StrapiUIDecorator helpItems={results} enable={enable} />

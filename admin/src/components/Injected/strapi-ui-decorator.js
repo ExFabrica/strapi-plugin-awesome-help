@@ -124,7 +124,7 @@ export const StrapiUIDecorator = ({ helpItems, enable }) => {
         let span = document.createElement("span");
         span.id = `awesome_help_${structureField.id}`;
         span.className = "awesome-help-tooltip";
-        span.innerHTML = `&#x1F916;<span class="awesome-help-tooltipText">${structureField.helpContent.replace(/(?:\n)/g, '<br>')}</span>`;
+        span.innerHTML = `&#10067;<span class="awesome-help-tooltipText">${structureField.helpContent.replace(/(?:\n)/g, '<br>')}</span>`;
         div ? div.appendChild(span) : label.appendChild(span);
       }
     }
