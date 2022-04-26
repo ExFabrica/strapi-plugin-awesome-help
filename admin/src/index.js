@@ -7,7 +7,7 @@ import PluginIcon from './components/PluginIcon';
 // I18N
 import getTrad from './utils/getTrad';
 //Component to inject in Strapi UI
-import { StrapiListZoneItem } from './components/injected/strapi-list-zone-item';
+import { StrapiListZoneItem } from './components/Injected/strapi-list-zone-item';
 
 const name = pluginPkg.strapi.name;
 
